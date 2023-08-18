@@ -1,0 +1,135 @@
+*{
+    margin: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    html,body{
+    background-color:  #87CEEB;
+    font-size: 1.4rem;
+    
+    }
+    .App{
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        font-family: Lato, sans-serif;
+    }
+    .contenedor-app{
+        flex:1;
+        min-width: 250px;
+        margin-top: 0px;
+        display:flex;
+        width: 500px;
+        height: 600px;
+        padding: 20px;
+        background-color: rgba(0, 0, 255, 0.5);
+        opacity: 0,5;
+        border-radius: 20px;
+        border: 1px solid  burlywood;
+        color: rgb(21, 21, 20);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        flex: 1;
+    }
+    
+
+    .fila{
+    height: 70px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(22, 22, 21);
+    border-radius: 25px;
+    border: 1px solid rgb(95, 90, 90);
+    margin: 2px; 
+    background-color: blanchedalmond;
+    }
+    .clima-actual{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        margin: 25px;
+        font-size:14px;
+    }
+    .temp{
+        align-content: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: burlywood;
+    }
+    .imagen{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .tarea-formulario{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+    .tarea-input{
+        width: 500px;
+        height: 70px;
+        border-radius: 25px;
+        border-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #000;
+        opacity: 0.7;
+        font-size: 25px;
+        margin: 20px 25px 25px 14px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        display: flex;
+        padding: 15px 15px 15px 45px;
+        background-color: rgba(0, 0, 255, 0.5);
+        opacity: 0,5;
+        color: #efe1e1;
+    }
+    .icono{
+        padding: 8px;
+        font-size: 40px;
+        position: absolute;
+        bottom: 0.2 rem;
+        color: rgb(17, 17, 18);
+        right: 12px;
+        cursor: pointer;
+        
+    }.icons{
+        padding: 8px;
+        font-size: 40px;
+        
+        bottom: 0.2 rem;
+        color:  burlywood;
+        margin-left: 13px;
+        cursor: pointer;  
+    }
+    .container{
+        display: flex;
+    }
+    .maxima{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%; 
+    }
+    .minima{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;  
+    }
+    .mini{
+        color:  burlywood;  
+    }
+    .maxi{
+        color:  burlywood; 
+    }
