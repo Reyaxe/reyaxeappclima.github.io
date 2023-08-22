@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ACR/static/css/main.5897a188.css",
+    "main.js": "/ACR/static/js/main.c4532184.js",
+    "index.html": "/ACR/index.html",
+    "main.5897a188.css.map": "/ACR/static/css/main.5897a188.css.map",
+    "main.c4532184.js.map": "/ACR/static/js/main.c4532184.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5897a188.css",
+    "static/js/main.c4532184.js"
+  ]
+}
