@@ -2,43 +2,41 @@
     margin: 1%;
     padding: 0;
     box-sizing: border-box;
-    
+
     }
     html,body{
     background-color:  #87CEEB;
     font-size: 1.4rem;
-    
+
     }
     .App{
-        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px; /* Espacio entre elementos */
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        padding-top: 15px;
-        font-family: Lato, sans-serif;
-    }
+        align-items: center; 
+        display: block;
+       margin-bottom: 10px;
+       line-height: 2;   
+}
+    
     .contenedor-app{
-        flex:1;
+        flex: 1;
         min-width: 250px;
         margin-top: 0px;
         display:flex;
-        width: 500px;
-        height: 600px;
         padding: 20px;
-        background-color: rgba(0, 0, 255, 0.5);
         opacity: 0,5;
-        border-radius: 20px;
-        border: 1px solid  burlywood;
+        border-radius: 20px; 
         color: rgb(21, 21, 20);
-        flex-direction: column;
+        display: flex;
         justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        flex: 1;
-    }
+        align-items: center;  
+}
+        
     
+
 
     .fila{
     height: 70px;
@@ -65,7 +63,7 @@
         align-content: center;
         justify-content: center;
         font-size: 3rem;
-        color: burlywood;
+        color: wheat;
     }
     .imagen{
         width: 150px;
@@ -79,11 +77,11 @@
         position: relative;
     }
     .tarea-input{
-        width: 500px;
-        height: 70px;
+        width: 350px;
+        height: 55px;
         border-radius: 25px;
-        border-color: rgba(0, 0, 0, 0.5);
-        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid #f3f0f0;
         opacity: 0.7;
         font-size: 25px;
         margin: 20px 25px 25px 14px;
@@ -92,9 +90,9 @@
         font-weight: bold;
         display: flex;
         padding: 15px 15px 15px 45px;
-        background-color: rgba(0, 0, 255, 0.5);
+        background-color:  rgba(255, 255, 255, 0.5);
         opacity: 0,5;
-        color: #efe1e1;
+        color: #514848;
     }
     .icono{
         padding: 8px;
@@ -104,15 +102,16 @@
         color: rgb(17, 17, 18);
         right: 12px;
         cursor: pointer;
-        
+
     }.icons{
         padding: 8px;
         font-size: 40px;
-        
-        bottom: 0.2 rem;
-        color:  burlywood;
+
+        bottom: 0.1 rem;
+        color:  rgb(88, 103, 217);
         margin-left: 13px;
         cursor: pointer;  
+        border-radius: 45 px;
     }
     .container{
         display: flex;
@@ -128,8 +127,66 @@
         border-radius: 50%;  
     }
     .mini{
-        color:  burlywood;  
+        color:  wheat;  
     }
     .maxi{
-        color:  burlywood; 
+        color:  wheat; 
     }
+   .container-sarch{
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+   }
+   .contenedor-prev{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Asegura que el contenedor ocupe el alto de la ventana */
+    min-width: 250px;
+    margin-top: 0px;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    opacity: 0,5;
+    border-radius: 30px;
+    border: 1px solid  rgb(15, 15, 15);
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0 auto; 
+    
+   }
+   
+   .weather-forecast {
+    
+    display: block; 
+ 
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-item {
+    display: inline-block; /* Mostrar elementos en línea horizontalmente */
+    text-align: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    margin: 5px;
+    flex: 1;
+  }
+  
+  .day {
+    font-weight: bold;
+  }
+  
+  .temperature {
+    font-size: 20px;
+  }
+  
+  .rain-probability {
+    color: blue;
+  }
+  
